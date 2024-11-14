@@ -6,6 +6,32 @@ GET http://localhost:3000/contacts
 ### GET contact by id
 GET http://localhost:3000/contacts/672d4f782021be55d4c26a36
 
+### POST a contact
+POST http://localhost:3000/contacts 
+Content-Type: application/json
+
+{
+    "firstName": "Talia",
+    "lastName": "Gibb",
+    "email": "t-gibb-sample@gmail.com",
+    "favoriteColor": "yellow",
+    "birthday": "Jan 6"    
+}
+
+### PUT contact by id
+PUT http://localhost:3000/contacts/6736710e8f74cffa25ce2f95
+Content-Type: application/json
+
+{
+    "firstName": "Talia",
+    "lastName": "Gibb",
+    "email": "t-gibb@sample.com",
+    "favoriteColor": "yellow",
+    "birthday": "January 6"    
+}
+
+### DELETE a contact
+DELETE http://localhost:3000/contacts/673670b38f74cffa25ce2f94
 
 ### PRODUCTION ###
 
